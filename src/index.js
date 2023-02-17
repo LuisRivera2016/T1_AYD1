@@ -19,6 +19,14 @@ app.post('/Calculadora', (req, res) => {
     var result = num1 + num2;
     res.send("Suma " + result );
 })
+
+app.get('/Info', (req, res) => {    
+    res.json(
+        {
+            "Info": "Luis Rivera - 201602813"
+        }
+    );
+})
  
 //Iniciando el servidor
 app.listen(app.get('port'),()=>{
